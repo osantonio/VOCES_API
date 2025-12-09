@@ -38,3 +38,8 @@ wheels/
 # Sistema
 .DS_Store
 Thumbs.db
+
+#directorios
+script/
+scripts/
+./script
