@@ -16,6 +16,7 @@ class TimestampMixin(SQLModel):
     )
     actualizado_en: datetime = Field(
         default_factory=datetime.now,
+        sa_column_kwargs={"onupdate": datetime.now},
         nullable=False,
         description="Fecha de última actualización",
     )
